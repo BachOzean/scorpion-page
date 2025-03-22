@@ -154,19 +154,14 @@
                 <h2 class="title is-3">Abstract</h2>
                 <div class="content has-text-justified">
                     <p>
-                        Current research efforts are focused on enhancing the thinking and reasoning capability of large
-                        language model (LLM) by prompting, data-driven emergence and inference-time computation. In this
-                        study, we consider stimulating language model's thinking and cognitive abilities from a modular
-                        perspective, which mimick the human brain architecture. We select a specific intermediate
-                        attention layer with newly implemented language heads. We conduct dual-layer fine-tuning by
-                        annotated (query, thought, response) samples and show that the intermediate layer can also learn
-                        to decode fluent and reasonable language tokens. A two-pass inference mechanism is designed to
-                        generate thoughts then formal responses. The entire framework is called modularized thinking
-                        language model (MeTHanol) which can enhance LLM's cognitive behaviors as indicated by Theory of
-                        Mind (ToM) and Vignette-based experiments. Case studies also show that MeTHanol can plan and
-                        self-reflect and generate human-like thoughts and answers, even on unseen and open-domain tasks.
-                        MeTHanol can also adapt to a personalized prompt and behave as the specified character. Our
-                        study holds promise for significant cognitive gains from a modular perspective. </p>
+                        Fixed prompt-based language models have obstacles on open-domain conversations, where the
+                        versatile topics requiring different expert advices or demonstrations to maximize the universal
+                        performance. Motivated by the dynamic prompt studies in traditional tasks, we extract different
+                        chatting strategies from varied forms of human corpus, which facilitates the langue model to
+                        produce more human style responses. We design and deploy a conversational Companion called
+                        SCorPion, which uses GraphRAG to summarize from original strategies globally, produce community
+                        instructions, and provides query-focus retrieval strategy. SCorPion can have strategic thinking,
+                        yield personified utterances, and can be stylized controlled by explicit factors.</p>
                 </div>
             </div>
         </div>
@@ -176,6 +171,9 @@
 
 
 <!-- Image carousel -->
+
+<!-- End image carousel -->
+
 <section class="hero is-small">
     <div class="hero-body">
         <div class="container is-max-desktop">
@@ -184,10 +182,11 @@
                     <h2 class="title is-3">Overview</h2>
                     <div class="column">
                         <figure class="image">
-                            <img src="static/images/paradigm.png" alt="Image 1">
+                            <img src="static/pdfs/xiyuan_p1_v4.pdf" alt="overview">
                         </figure>
                         <h2 class="subtitle has-text-centered">
-                            An overview of MeTHanol with modular corre-spondence to human brain architecture.
+                            SCorPion retrieves and ranks the chatting strategy from different
+                            textual corpus by GraphRAG, and produces anthropomorphic response.
                         </h2>
                     </div>
                 </div>
@@ -195,7 +194,6 @@
         </div>
     </div>
 </section>
-<!-- End image carousel -->
 
 <section class="hero is-small">
     <div class="hero-body">
@@ -205,10 +203,11 @@
                     <h2 class="title is-3">Framework</h2>
                     <div class="column">
                         <figure class="image">
-                            <img src="static/images/framework.png" alt="Image 2">
+                            <img src="static/pdfs/xiyuan_p2_v4.pdf" alt="framework">
                         </figure>
                         <h2 class="subtitle has-text-centered">
-                            Comparison of the MeTHanol framework to standard LLM fine-tuning.
+                            The pipeline starts from the strategy extraction from three types of corpus, then conducts
+                            the indexing and summarization stages of GraphRAG, and finally inference the response.
                         </h2>
                     </div>
                 </div>
@@ -216,7 +215,6 @@
         </div>
     </div>
 </section>
-
 <section class="hero is-small">
     <div class="hero-body">
         <div class="container is-max-desktop">
