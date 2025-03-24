@@ -164,10 +164,7 @@
                             display: inline-block;
                             -webkit-background-clip: text;
                             background-clip: text;
-                            color: transparent;
-                            text-transform: uppercase;
-                            text-shadow: 0 0 10px rgba(255,107,107,0.5);
-                            filter: drop-shadow(0 0 2px #ffd93d);
+                            color: black;
                         ">SCorPion</span>, which uses GraphRAG to summarize from original strategies globally, produce
                         community instructions, and provides query-focus retrieval strategy. SCorPion can have strategic
                         thinking, yield personified utterances, and can be stylized controlled by explicit factors.</p>
@@ -263,127 +260,363 @@
                                 <img src="static/images/boxplot.png" alt="Image 5">
                             </figure>
                         </div>
-                        <h2 class="subtitle has-text-centered">
-                            Emotional shifts by SCorPion on emotional intensity (left) and emotional contagion (right).
-                        </h2>
                     </div>
+                    <h2 class="subtitle has-text-centered">
+                        Emotional shifts by SCorPion on emotional intensity (left) and emotional contagion (right).
+                    </h2>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--&lt;!&ndash; Youtube video &ndash;&gt;-->
-    <!--<section class="hero is-small is-light">-->
-    <!--    <div class="hero-body">-->
-    <!--        <div class="container">-->
-    <!--            &lt;!&ndash; Paper video. &ndash;&gt;-->
-    <!--            <h2 class="title is-3">Video Presentation</h2>-->
-    <!--            <div class="columns is-centered has-text-centered">-->
-    <!--                <div class="column is-four-fifths">-->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-full">
+                        <div class="table-container" style="margin: 2rem auto; max-width: 1200px;">
+                            <style>
+                                @keyframes fadeInUp {
+                                    from {
+                                        opacity: 0;
+                                        transform: translateY(8px);
+                                    }
+                                    to {
+                                        opacity: 1;
+                                        transform: translateY(0);
+                                    }
+                                }
 
-    <!--                    <div class="publication-video">-->
-    <!--                        &lt;!&ndash; Youtube embed code here &ndash;&gt;-->
-    <!--                        <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0"-->
-    <!--                                allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</section>-->
-    <!--&lt;!&ndash; End youtube video &ndash;&gt;-->
+                                .dynamic-table {
+                                    width: 100%;
+                                    border-collapse: collapse;
+                                    min-width: 800px;
+                                    font-family: 'Inter', system-ui, sans-serif;
+                                    background: white;
+                                    border-radius: 0px;
+                                    overflow: hidden;
+                                    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.08);
+                                }
 
+                                .dynamic-table th {
+                                    background: #8c8eef;
+                                    color: white;
+                                    padding: 0.8rem 1rem;
+                                    font-weight: 600;
+                                    text-align: center;
+                                    transition: background 0.3s ease;
+                                }
 
-    <!--&lt;!&ndash; Video carousel &ndash;&gt;-->
-    <!--<section class="hero is-small">-->
-    <!--    <div class="hero-body">-->
-    <!--        <div class="container">-->
-    <!--            <h2 class="title is-3">Another Carousel</h2>-->
-    <!--            <div id="results-carousel" class="carousel results-carousel">-->
-    <!--                <div class="item item-video1">-->
-    <!--                    <video poster="" id="video1" autoplay controls muted loop height="100%">-->
-    <!--                        &lt;!&ndash; Your video file here &ndash;&gt;-->
-    <!--                        <source src="static/videos/carousel1.mp4"-->
-    <!--                                type="video/mp4">-->
-    <!--                    </video>-->
-    <!--                </div>-->
-    <!--                <div class="item item-video2">-->
-    <!--                    <video poster="" id="video2" autoplay controls muted loop height="100%">-->
-    <!--                        &lt;!&ndash; Your video file here &ndash;&gt;-->
-    <!--                        <source src="static/videos/carousel2.mp4"-->
-    <!--                                type="video/mp4">-->
-    <!--                    </video>-->
-    <!--                </div>-->
-    <!--                <div class="item item-video3">-->
-    <!--                    <video poster="" id="video3" autoplay controls muted loop height="100%">\-->
-    <!--                        &lt;!&ndash; Your video file here &ndash;&gt;-->
-    <!--                        <source src="static/videos/carousel3.mp4"-->
-    <!--                                type="video/mp4">-->
-    <!--                    </video>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</section>-->
-    <!--&lt;!&ndash; End video carousel &ndash;&gt;-->
+                                .dynamic-table td {
+                                    padding: 0.8rem 1rem;
+                                    text-align: center;
+                                    border-bottom: 1px solid #e5e7eb;
+                                    white-space: nowrap;
+                                    transition: all 0.2s ease;
+                                }
 
+                                .method-cell {
+                                    background: #f8fafc;
+                                    position: sticky;
+                                    left: 0;
+                                    z-index: 2;
+                                    font-weight: 500;
+                                    color: #1f2937;
+                                    min-width: 180px;
+                                    padding-left: 1.5rem;
+                                    border-right: 1px solid #e5e7eb;
+                                    transition: transform 0.3s ease;
+                                }
 
-    <!--&lt;!&ndash; Paper poster &ndash;&gt;-->
-    <!--<section class="hero is-small is-light">-->
-    <!--    <div class="hero-body">-->
-    <!--        <div class="container">-->
-    <!--            <h2 class="title">Poster</h2>-->
+                                .best-value {
+                                    color: #6366f1;
+                                    font-weight: 600;
+                                    position: relative;
+                                }
 
-    <!--            <iframe src="static/pdfs/sample.pdf" width="100%" height="550">-->
-    <!--            </iframe>-->
+                                .best-value::after {
+                                    content: "🏆";
+                                    margin-left: 0.3rem;
+                                    font-size: 0.8em;
+                                    vertical-align: middle;
+                                    transition: transform 0.3s ease;
+                                }
 
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</section>-->
-    <!--&lt;!&ndash;End paper poster &ndash;&gt;-->
+                                /* 悬停动效 */
+                                .dynamic-table tr:hover td {
+                                    background: #f1f5f9;
+                                    transform: translateX(4px);
+                                }
 
+                                .dynamic-table tr:hover .method-cell {
+                                    transform: translateX(4px);
+                                }
 
-    <!--&lt;!&ndash;BibTex citation &ndash;&gt;-->
-    <!--<section class="section" id="BibTeX">-->
-    <!--    <div class="container is-max-desktop content">-->
-    <!--        <h2 class="title">BibTeX</h2>-->
-    <!--        <pre><code>BibTex Code Here</code></pre>-->
-    <!--    </div>-->
-    <!--</section>-->
-    <!--&lt;!&ndash;End BibTex citation &ndash;&gt;-->
+                                .dynamic-table td:hover {
+                                    transform: scale(1.05);
+                                    z-index: 3;
+                                }
 
+                                /* 加载动画 */
+                                .dynamic-table tbody tr {
+                                    animation: fadeInUp 0.6s ease forwards;
+                                    opacity: 0;
+                                }
 
-    <footer class="footer">
-        <div class="container">
-            <div class="columns is-centered">
-                <div class="column is-8">
-                    <div class="content">
+                                .dynamic-table tbody tr:nth-child(1) {
+                                    animation-delay: 0.1s;
+                                }
 
-                        <p>
-                            This page was built using the <a
-                                href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic
-                            Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io"
-                                                                                    target="_blank">Nerfies</a> project
-                            page.
-                            You are free to borrow the source code of this website, we just ask that you link back to
-                            this
-                            page in the footer. <br> This website is licensed under a <a rel="license"
-                                                                                         href="http://creativecommons.org/licenses/by-sa/4.0/"
-                                                                                         target="_blank">Creative
-                            Commons Attribution-ShareAlike 4.0 International License</a>.
-                        </p>
+                                .dynamic-table tbody tr:nth-child(2) {
+                                    animation-delay: 0.2s;
+                                }
 
+                                .dynamic-table tbody tr:nth-child(3) {
+                                    animation-delay: 0.3s;
+                                }
+
+                                .dynamic-table tbody tr:nth-child(4) {
+                                    animation-delay: 0.4s;
+                                }
+
+                                .dynamic-table tbody tr:nth-child(5) {
+                                    animation-delay: 0.5s;
+                                }
+
+                                /* 奖杯悬停动效 */
+                                .best-value:hover::after {
+                                    transform: scale(1.2) rotate(15deg);
+                                }
+                            </style>
+
+                            <table class="dynamic-table">
+                                <thead>
+                                <tr>
+                                    <th class="method-cell">Method</th>
+                                    <th colspan="2">ESconv</th>
+                                    <th colspan="2">DailyDialogue</th>
+                                    <th colspan="2">EmpatheticDialogues</th>
+                                    <th colspan="2">MIC</th>
+                                    <th colspan="2">GYAFC</th>
+                                    <th colspan="2">Shakespeare</th>
+                                </tr>
+                                <tr>
+                                    <th class="method-cell"></th>
+                                    <th>B-2</th>
+                                    <th>R-L</th>
+                                    <th>B-2</th>
+                                    <th>R-L</th>
+                                    <th>B-2</th>
+                                    <th>R-L</th>
+                                    <th>B-2</th>
+                                    <th>R-L</th>
+                                    <th>B-2</th>
+                                    <th>R-L</th>
+                                    <th>B-2</th>
+                                    <th>R-L</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="method-cell">LLaMA3-70B-Instruct</td>
+                                    <td>3.06</td>
+                                    <td>10.16</td>
+                                    <td class="best-value">3.50</td>
+                                    <td class="best-value">11.20</td>
+                                    <td>2.60</td>
+                                    <td>8.90</td>
+                                    <td>3.90</td>
+                                    <td>11.06</td>
+                                    <td>13.00</td>
+                                    <td>32.44</td>
+                                    <td>12.45</td>
+                                    <td>31.44</td>
+                                </tr>
+                                <tr>
+                                    <td class="method-cell">+ Self-Refine</td>
+                                    <td>2.97</td>
+                                    <td>10.12</td>
+                                    <td>3.40</td>
+                                    <td>10.83</td>
+                                    <td>2.81</td>
+                                    <td>9.74</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td class="method-cell">+ CoT</td>
+                                    <td>1.85</td>
+                                    <td>9.67</td>
+                                    <td>2.09</td>
+                                    <td>7.62</td>
+                                    <td>2.60</td>
+                                    <td>9.06</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td class="method-cell">+ BOT</td>
+                                    <td>3.44</td>
+                                    <td>10.95</td>
+                                    <td>2.78</td>
+                                    <td>9.67</td>
+                                    <td>2.10</td>
+                                    <td>8.18</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td class="method-cell" style="color: #6366f1; font-weight: 600;">+ SCorPion
+                                        (ours)
+                                    </td>
+                                    <td class="best-value">4.32</td>
+                                    <td class="best-value">13.00</td>
+                                    <td>3.29</td>
+                                    <td class="best-value">12.01</td>
+                                    <td class="best-value">3.74</td>
+                                    <td class="best-value">13.06</td>
+                                    <td class="best-value">6.22</td>
+                                    <td class="best-value">15.13</td>
+                                    <td class="best-value">15.24</td>
+                                    <td class="best-value">36.14</td>
+                                    <td class="best-value">15.06</td>
+                                    <td class="best-value">37.43</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
 
-    <!-- Statcounter tracking code -->
 
-    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+        <!--&lt;!&ndash; Youtube video &ndash;&gt;-->
+        <!--<section class="hero is-small is-light">-->
+        <!--    <div class="hero-body">-->
+        <!--        <div class="container">-->
+        <!--            &lt;!&ndash; Paper video. &ndash;&gt;-->
+        <!--            <h2 class="title is-3">Video Presentation</h2>-->
+        <!--            <div class="columns is-centered has-text-centered">-->
+        <!--                <div class="column is-four-fifths">-->
 
-    <!-- End of Statcounter Code -->
+        <!--                    <div class="publication-video">-->
+        <!--                        &lt;!&ndash; Youtube embed code here &ndash;&gt;-->
+        <!--                        <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0"-->
+        <!--                                allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</section>-->
+        <!--&lt;!&ndash; End youtube video &ndash;&gt;-->
+
+
+        <!--&lt;!&ndash; Video carousel &ndash;&gt;-->
+        <!--<section class="hero is-small">-->
+        <!--    <div class="hero-body">-->
+        <!--        <div class="container">-->
+        <!--            <h2 class="title is-3">Another Carousel</h2>-->
+        <!--            <div id="results-carousel" class="carousel results-carousel">-->
+        <!--                <div class="item item-video1">-->
+        <!--                    <video poster="" id="video1" autoplay controls muted loop height="100%">-->
+        <!--                        &lt;!&ndash; Your video file here &ndash;&gt;-->
+        <!--                        <source src="static/videos/carousel1.mp4"-->
+        <!--                                type="video/mp4">-->
+        <!--                    </video>-->
+        <!--                </div>-->
+        <!--                <div class="item item-video2">-->
+        <!--                    <video poster="" id="video2" autoplay controls muted loop height="100%">-->
+        <!--                        &lt;!&ndash; Your video file here &ndash;&gt;-->
+        <!--                        <source src="static/videos/carousel2.mp4"-->
+        <!--                                type="video/mp4">-->
+        <!--                    </video>-->
+        <!--                </div>-->
+        <!--                <div class="item item-video3">-->
+        <!--                    <video poster="" id="video3" autoplay controls muted loop height="100%">\-->
+        <!--                        &lt;!&ndash; Your video file here &ndash;&gt;-->
+        <!--                        <source src="static/videos/carousel3.mp4"-->
+        <!--                                type="video/mp4">-->
+        <!--                    </video>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</section>-->
+        <!--&lt;!&ndash; End video carousel &ndash;&gt;-->
+
+
+        <!--&lt;!&ndash; Paper poster &ndash;&gt;-->
+        <!--<section class="hero is-small is-light">-->
+        <!--    <div class="hero-body">-->
+        <!--        <div class="container">-->
+        <!--            <h2 class="title">Poster</h2>-->
+
+        <!--            <iframe src="static/pdfs/sample.pdf" width="100%" height="550">-->
+        <!--            </iframe>-->
+
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</section>-->
+        <!--&lt;!&ndash;End paper poster &ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;BibTex citation &ndash;&gt;-->
+        <!--<section class="section" id="BibTeX">-->
+        <!--    <div class="container is-max-desktop content">-->
+        <!--        <h2 class="title">BibTeX</h2>-->
+        <!--        <pre><code>BibTex Code Here</code></pre>-->
+        <!--    </div>-->
+        <!--</section>-->
+        <!--&lt;!&ndash;End BibTex citation &ndash;&gt;-->
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-8">
+                        <div class="content">
+
+                            <p>
+                                This page was built using the <a
+                                    href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                                    target="_blank">Academic
+                                Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io"
+                                                                                        target="_blank">Nerfies</a> project
+                                page.
+                                You are free to borrow the source code of this website, we just ask that you link back
+                                to
+                                this
+                                page in the footer. <br> This website is licensed under a <a rel="license"
+                                                                                             href="http://creativecommons.org/licenses/by-sa/4.0/"
+                                                                                             target="_blank">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Statcounter tracking code -->
+
+        <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+        <!-- End of Statcounter Code -->
 
 </body>
 </html>
