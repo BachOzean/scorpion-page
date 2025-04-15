@@ -45,92 +45,60 @@
     <script src="static/js/index.js"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">-->
+    <!--    <style>-->
+    <!--        .inline-heading {-->
+    <!--            display: inline;-->
+    <!--            font-weight: bold;-->
+    <!--            margin-right: 5px;-->
+    <!--        }-->
+    <!--    </style>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,300;0,8..144,400;0,8..144,700;1,8..144,300;1,8..144,400;1,8..144,700&display=swap"
+          rel="stylesheet">
     <style>
-        .inline-heading {
-            display: inline;
-            font-weight: bold;
-            margin-right: 5px;
+        body {
+            font-family: 'Roboto Serif', serif;
         }
     </style>
-
 </head>
 <body>
 
-
-<section class="hero">
+<!--title-->
+<section class="hero  py-16">
     <div class="hero-body">
-        <div class="container is-max-desktop">
-            <div class="columns is-centered">
-                <div class="column has-text-centered">
-                    <h1 class="title is-2 publication-title">
-                        <img src="static/images/scorpion-icon.png"
-                             alt="SCorPion Icon"
-                             style="height: 1em; vertical-align: middle; margin-right: 0.3em;">
-                        SCorPion: A Strategic, Controllable and Personified Conversational Companion</h1>
-                    <div class="is-size-5 publication-authors">
-                        <!-- Paper authors -->
+        <div class="container mx-auto max-w-screen-xl">
+            <div class="flex justify-center">
+                <div class="text-center">
+                    <h1 class="title text-2xl font-bold flex justify-center items-center mb-4">
+                        <img src="static/images/scorpion-icon.png" alt="SCorPion Icon" class="h-6 mr-2">
+                        SCorPion: A Strategic, Controllable and Personified Conversational Companion
+                    </h1>
+                    <div class="text-lg mb-4">
                         <span class="author-block">Anonymous</span>
-                        <!--                        <span class="author-block">-->
-                        <!--                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Ningyuan Xi</a><sup>*</sup>,</span>-->
-                        <!--                        <span class="author-block">-->
-                        <!--                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Xiaoyu Wang</a><sup>*</sup>,</span>-->
-                        <!--                        <span class="author-block">-->
-                        <!--                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>-->
-                        <!--                  </span>-->
                     </div>
-
-                    <!--                    <div class="is-size-5 publication-authors">-->
-                    <!--                        <span class="author-block">Institution Name<br>Conferance name and year</span>-->
-                    <!--                        <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>-->
-                    <!--                    </div>-->
-
-                    <div class="column has-text-centered">
-                        <div class="publication-links">
-                            <!-- Arxiv PDF link -->
-                            <span class="link-block">
+                    <div class="flex justify-center space-x-4">
                         <a href="" target="_blank"
-                           class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                            <!-- Supplementary PDF link -->
-                            <span class="link-block">
-                      <a href="" target="_blank"
-                         class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                            <!-- Github link -->
-                            <span class="link-block">
-                    <a href="" target="_blank"
-                       class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                            <!-- ArXiv abstract Link -->
-                            <span class="link-block">
-                  <a href="" target="_blank"
-                     class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-                        </div>
+                           class="button bg-gray-800 text-white px-4 py-2 rounded-md flex items-center space-x-1">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Paper</span>
+                        </a>
+                        <a href="" target="_blank"
+                           class="button bg-gray-800 text-white px-4 py-2 rounded-md flex items-center space-x-1">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Supplementary</span>
+                        </a>
+                        <a href="" target="_blank"
+                           class="button bg-gray-800 text-white px-4 py-2 rounded-md flex items-center space-x-1">
+                            <i class="fab fa-github"></i>
+                            <span>Code</span>
+                        </a>
+                        <a href="" target="_blank"
+                           class="button bg-gray-800 text-white px-4 py-2 rounded-md flex items-center space-x-1">
+                            <i class="ai ai-arxiv"></i>
+                            <span>arXiv</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -138,208 +106,180 @@
     </div>
 </section>
 
+<!--abstract-->
+<section class="section hero  py-16">
+    <div class="container mx-auto max-w-screen-xl">
+        <div class="flex justify-center">
+            <div class="text-center w-4/5">
+                <h2 class="title text-3xl font-bold mb-4">Abstract</h2>
 
-<!-- Teaser video-->
-<!--<section class="hero teaser">-->
-<!--    <div class="container is-max-desktop">-->
-<!--        <div class="hero-body">-->
-<!--            <video poster="" id="tree" autoplay controls muted loop height="100%">-->
-<!--                &lt;!&ndash; Your video here &ndash;&gt;-->
-<!--                <source src="static/videos/banner_video.mp4"-->
-<!--                        type="video/mp4">-->
-<!--            </video>-->
-<!--            <h2 class="subtitle has-text-centered">-->
-<!--                Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at,-->
-<!--                placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.-->
-<!--            </h2>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-<!-- End teaser video -->
-
-
-<section class="hero is-small">
-    <div class="hero-body">
-        <div class="container is-max-desktop">
-
-            <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                    <h2 class="title is-3">Case Illustrations</h2>
-                    <div class="columns">
-                        <div class="column">
-                            <figure class="image border-2 border-slate-300 p-2 flex justify-center items-center">
-                                <img class="object-contain max-w-full max-h-full" src="static/videos/IMG_5843.GIF"
-                                     alt="case1">
-                            </figure>
-                            <!--                                <h2 class="subtitle has-text-centered">-->
-                            <!--                                    Case 1-->
-                            <!--                                </h2>-->
-                        </div>
-                        <div class="column">
-                            <figure class="image border-2 border-slate-300 p-2 flex justify-center items-center">
-                                <img class="object-contain max-w-full max-h-full" src="static/videos/IMG_5851.GIF"
-                                     alt="case2">
-                            </figure>
-                            <!--                                <h2 class="subtitle has-text-centered">-->
-                            <!--                                    Case 2-->
-                            <!--                                </h2>-->
-                        </div>
-                    </div>
-                    <h2 class="subtitle has-text-centered">
-                        Case of MIC
-                    </h2>
-                </div>
-            </div>
-            <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                    <div class="columns">
-                        <div class="column">
-                            <figure class="image border-2 border-slate-300 p-2 flex justify-center items-center">
-                                <img class="object-contain max-w-full max-h-full" src="static/videos/IMG_5847.GIF"
-                                     alt="case1">
-                            </figure>
-                        </div>
-                        <div class="column">
-                            <figure class="image border-2 border-slate-300 p-2 flex justify-center items-center">
-                                <img class="object-contain max-w-full max-h-full" src="static/videos/IMG_5849.GIF"
-                                     alt="case1">
-                            </figure>
-                        </div>
-
-                    </div>
-                    <h2 class="subtitle has-text-centered">
-                        Case of GYAFC
-                    </h2>
-                </div>
-            </div>
-            <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                    <div class="columns">
-                        <div class="column">
-                            <figure class="image border-2 border-slate-300 p-2 flex justify-center items-center">
-                                <img class="object-contain max-w-full max-h-full" src="static/videos/IMG_5845.GIF"
-                                     alt="case1">
-                            </figure>
-                            <!--                                <h2 class="subtitle has-text-centered">-->
-                            <!--                                    Case 1-->
-                            <!--                                </h2>-->
-                        </div>
-                    </div>
-                    <h2 class="subtitle has-text-centered">
-                        Case of Shakespeare
-                    </h2>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-
-<!-- Paper abstract -->
-<section class="section hero">
-    <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-                <h2 class="title is-3">Abstract</h2>
-                <div class="content has-text-justified">
+                <div class="content text-justify text-m">
                     <p>
                         Fixed prompt-based language models have obstacles on open-domain conversations, where the
                         versatile topics requiring different expert advices or demonstrations to maximize the universal
                         performance. Motivated by the dynamic prompt studies in traditional tasks, we extract different
-                        chatting strategies from varied forms of human corpus, which facilitates the langue model to
+                        chatting strategies from varied forms of human corpus, which facilitates the language model to
                         produce more human style responses. We design and deploy a conversational Companion called
-                        <span style="
-                            font-weight: 900;
-                            display: inline-block;
-                            -webkit-background-clip: text;
-                            background-clip: text;
-                            color: black;
-                        ">SCorPion</span>, which uses GraphRAG to summarize from original strategies globally, produce
+                        <span class="font-bold text-black">SCorPion</span>, which uses GraphRAG to summarize from
+                        original strategies globally, produce
                         community instructions, and provides query-focus retrieval strategy. SCorPion can have strategic
-                        thinking, yield personified utterances, and can be stylized controlled by explicit factors.</p>
+                        thinking, yield personified utterances, and can be stylized controlled by explicit factors.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End paper abstract -->
 
-<!-- Paper Introduction -->
-<!--<section class="section hero">-->
-<!--    <div class="container is-max-desktop">-->
-<!--        <div class="columns is-centered has-text-centered">-->
-<!--            <div class="column is-four-fifths">-->
-<!--                <h2 class="title is-3">Introduction</h2>-->
-<!--                <div class="content has-text-justified">-->
-<!--                    <p>-->
-<!--                        Large Language Model (LLM) has showcased the impressive performance in varied tasks, such as-->
-<!--                        question-answering (QA), dialogue, math, coding and reasoning. To trigger the LLM's thinking-->
-<!--                        capability or steer it into a specific domain, prompt-based methods have been proved to be-->
-<!--                        simple and effective. For example, Chain-of-Thought (CoT) \cite{wei2022chain} prompts the LLM to-->
-<!--                        `think step by step', therefore improve the performance in many reasoning-based tasks.-->
-<!--                        Buffer-of-Thoughts (BOT) \cite{yang2024BOT} further distill different `thought' templates, and-->
-<!--                        retrieve the appropriate thought template upon a specific query, enhancing performance compared-->
-<!--                        to the fix-prompt baselines.-->
-<!--                    </p>-->
-<!--                    <p>-->
-<!--                        Nevertheless, conventional prompt-based methods may not work well in the daily conversation-->
-<!--                        task, which generally does not have explicit reasoning steps. Furthermore, such dialogue topics-->
-<!--                        are usually diverged, universally connected, and lacks of qualitative evaluation manners.-->
-<!--                        Although there are also prompt-based studies aiming to strengthen the LLM communication skills,-->
-<!--                        such as CSIM \cite{zhou-etal-2024-think} and Ask-an-Expert \cite{zhang-etal-2023-ask}, they are-->
-<!--                        implemented with fixed and limited amount of skills or advising experts, which might be-->
-<!--                        insufficient when confronting complicated and widely distributed situations in practices.-->
-<!--                    </p>-->
-<!--                    <p>-->
-<!--                        In this paper, we implement a \textbf{S}trategic, \textbf{Co}nt\textbf{r}ollable and-->
-<!--                        \textbf{P}ersonified Conversational Compan\textbf{ion} (\textbf{\ModelName}), to produce-->
-<!--                        stylized, anthropomorphic and controllable responses. Figure \ref{fig:paradigm} provides a-->
-<!--                        snapshot of {\ModelName}. To overcome the aforementioned challenges, inspired by the recent-->
-<!--                        progress on GraphRAG \cite{edge2024GraphRAG}, we employ the GraphRAG to replace the standard-->
-<!--                        retriever in BOT. The indexing stage of GraphRAG implicitly incorporates problem distillation-->
-<!--                        and thought formulation in BoT, while the summarization stage of GraphRAG conducts a global-->
-<!--                        search form of retrieval task. As innovative attempts, we replace the community answers (CA) in-->
-<!--                        the original GraphRAG with strategy identity (SI), and use them to extract versatile-->
-<!--                        conversational strategies from enormous human corpus, with strategy, principle, or style-->
-<!--                        annotated. We also combine GraphRAG with the top-k ranking mechanism to improve the performance-->
-<!--                        and speed, as well as facilitating the stylized controller which adjusts the ranking scores of-->
-<!--                        relevant strategies, functioning on outer factors. We experiment {\ModelName} on open-domain,-->
-<!--                        emotional support, style adaptation, emotional intelligence tasks, with improved performance-->
-<!--                        observed, compared to different prompt-based baselines, as well as BOT and the original-->
-<!--                        GraphRAG. Here we summarize our key contributions as follows:-->
-<!--                    </p>-->
-<!--                    <ol>-->
-<!--                        <li>We extract dialogue strategies from corpus in varied formats, which can steer LLM to-->
-<!--                            generate personalized and stylized texts.-->
-<!--                        </li>-->
-<!--                        <li>Our agent employs GraphRAG with top-k ranking mechanism and community instructions, which-->
-<!--                            replace community answers.-->
-<!--                        </li>-->
-<!--                        <li>Our method allows different control factors which adjusts its response style according to-->
-<!--                            levels of empathy, formality and morality.-->
-<!--                        </li>-->
-<!--                        <li>We implement substantial and in-depth experiments on open-domain, emotion support and style-->
-<!--                            adaptation tasks, to validate our claims.-->
-<!--                        </li>-->
-<!--                    </ol>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
+<!--cases-->
 <section class="hero is-small">
     <div class="hero-body">
         <div class="container is-max-desktop">
             <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
-                    <h2 class="title is-3">Overview</h2>
+
+                    <h2 class="title text-3xl font-bold mb-4">Cases</h2>
+
+                    <div class="columns">
+                        <div class="column">
+                            <div class="border-2 border-slate-300 p-2 flex flex-col items-center">
+                                <h2 class="text-center mb-2">Open Case 1</h2>
+                                <img class="object-contain max-w-full max-h-full" src="static/videos/IMG_5827.GIF"
+                                     alt="case1">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="border-2 border-slate-300 p-2 flex flex-col items-center">
+                                <h2 class="text-center mb-2">Open Case 2</h2>
+                                <img class="object-contain max-w-full max-h-full" src="static/videos/IMG_5829.GIF"
+                                     alt="case1">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+
+                    <div class="columns">
+                        <div class="column">
+                            <div class="border-2 border-slate-300 p-2 flex flex-col items-center">
+                                <h2 class="text-center mb-2">Stylized Cases (morality-Care)</h2>
+                                <img class="object-contain max-w-full max-h-full" src="static/videos/IMG_5843.GIF"
+                                     alt="case1">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="border-2 border-slate-300 p-2 flex flex-col items-center">
+                                <h2 class="text-center mb-2">Stylized Cases (morality-Loyalty)</h2>
+                                <img class="object-contain max-w-full max-h-full" src="static/videos/IMG_5851.GIF"
+                                     alt="case1">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="columns">
+
+                        <div class="column">
+                            <div class="border-2 border-slate-300 p-2 flex flex-col items-center">
+                                <h2 class="text-center mb-2">Stylized Cases (morality-formal) </h2>
+                                <img class="object-contain max-w-full max-h-full" src="static/videos/IMG_5847.GIF"
+                                     alt="case1">
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="border-2 border-slate-300 p-2 flex flex-col items-center">
+                                <h2 class="text-center mb-2">Stylized Cases (morality-informal)</h2>
+                                <img class="object-contain max-w-full max-h-full" src="static/videos/IMG_5849.GIF"
+                                     alt="case1">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="columns">
+
+                        <div class="column">
+                            <div class="border-2 border-slate-300 p-2 flex flex-col items-center">
+                                <h2 class="text-center mb-2">Control Cases (GYAFC) </h2>
+                                <img class="object-contain max-w-full max-h-full" src="static/videos/IMG_5927.GIF"
+                                     alt="case1">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="border-2 border-slate-300 p-2 flex flex-col items-center">
+                                <h2 class="text-center mb-2">Control Cases (Shakespeare)</h2>
+                                <img class="object-contain max-w-full max-h-full" src="static/videos/IMG_5929.GIF"
+                                     alt="case1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="columns">
+                        <div class="column">
+                            <div class="border-2 border-slate-300 p-2 flex flex-col items-center">
+                                <h2 class="text-center mb-2">Control Cases (MIC) </h2>
+                                <img class="object-contain max-w-full max-h-full" src="static/videos/IMG_5932.GIF"
+                                     alt="case1">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="border-2 border-slate-300 p-2 flex flex-col items-center">
+                                <h2 class="text-center mb-2">Control Cases (Esconv)</h2>
+                                <img class="object-contain max-w-full max-h-full" src="static/videos/IMG_5934.GIF"
+                                     alt="case1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--cases end -->
+
+<!--approach-->
+<section class="section hero  py-16">
+    <div class="container mx-auto max-w-screen-xl">
+        <div class="flex justify-center">
+            <div class="text-center w-4/5">
+                <h2 class="title text-3xl font-bold mb-3">Approach</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--overview-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="w-full md:w-1/4 text-left md:pl-0 mb-4 md:mb-0">
+                        <h2 class="title text-2xl font-bold">Overview</h2>
+                    </div>
                     <div class="column">
                         <figure class="image">
-                            <img src="static/images/xiyuan_p1_v4.png" alt="overview">
+                            <img src="static/images/xiyuan_p1_v4.png" alt="overview figure">
                         </figure>
-                        <h2 class="subtitle has-text-centered">
+                        <h2 class="subtitle text-sm has-text-centered">
                             SCorPion retrieves and ranks the chatting strategy from different
                             textual corpus by GraphRAG, and produces anthropomorphic response.
                         </h2>
@@ -349,49 +289,23 @@
         </div>
     </div>
 </section>
-<!-- End paper Introduction -->
 
-<!-- Paper Preliminaries of GraphRAG -->
-<!--<section class="section hero">-->
-<!--    <div class="container is-max-desktop">-->
-<!--        <div class="columns is-centered has-text-centered">-->
-<!--            <div class="column is-four-fifths">-->
-<!--                <h2 class="title is-3">Preliminaries of GraphRAG</h2>-->
-<!--                <div class="content has-text-justified">-->
 
-<!--                    <p>-->
-<!--                        GraphRAG achieves the query-focused summarization (QFS) throughout the global corpus, by-->
-<!--                        integrating a knowledge graph to the naive RAG. It employs an LLM and conducts the two stages:-->
-<!--                    </p>-->
-<!--                    <ol>-->
-<!--                        <li>Indexing time: derive an entity knowledge graph (with entities andedges) from source corpus,-->
-<!--                            and generate Community Summaries (CS) from domain-tailored summarization.-->
-<!--                        </li>-->
-<!--                        <li>Query time: pre-generate community summaries for all groups of closely-related entities,-->
-<!--                            then conduct QFS to generate Community Answers (CA) and corresponding scores.-->
-<!--                        </li>-->
-
-<!--                    </ol>-->
-<!--                    <p>-->
-<!--                        Resulted CAs are then passed to the LLM to produce the final response.-->
-<!--                    </p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-
+<!--framework-->
 <section class="hero is-small">
     <div class="hero-body">
         <div class="container is-max-desktop">
             <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
-                    <h2 class="title is-3">Framework</h2>
+
+                    <div class="w-full md:w-1/4 text-left md:pl-0 mb-3 md:mb-0">
+                        <h2 class="title text-2xl font-bold">Framework</h2>
+                    </div>
                     <div class="column">
                         <figure class="image">
                             <img src="static/images/xiyuan_p2_v4.png" alt="framework">
                         </figure>
-                        <h2 class="subtitle has-text-centered">
+                        <h2 class="subtitle text-sm has-text-centered">
                             The pipeline starts from the strategy extraction from three types of corpus, then conducts
                             the indexing and summarization stages of GraphRAG, and finally inference the response.
                         </h2>
@@ -401,170 +315,175 @@
         </div>
     </div>
 </section>
-<!-- End paper Preliminaries of GraphRAG -->
 
-
-<!-- Paper Method -->
-<!--<section class="section hero">-->
-<!--    <div class="container is-max-desktop">-->
-<!--        <div class="columns is-centered has-text-centered">-->
-<!--            <div class="column is-four-fifths">-->
-<!--                <h2 class="title is-3">Method</h2>-->
-<!--                <div class="content has-text-justified">-->
-
-<!--                    <p>-->
-<!--                        Figure \ref{fig:framework} exhibits the detailed pipelines of our framework. There are two-->
-<!--                        foundation LLMs in {\ModelName}, $\mathcal{M}$ and $\mathcal{M}^g$. The former is utilized to-->
-<!--                        generate the conversational responses, while the latter is employed to serve the GraphRAG.-->
-<!--                    </p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-
-<!--<section class="section hero">-->
-<!--    <div class="container is-max-desktop">-->
-<!--        <div class="columns is-centered has-text-centered">-->
-<!--            <div class="column is-four-fifths">-->
-<!--                <h2 class="title is-3">3.1 Framework</h2>-->
-<!--                <div class="content has-text-justified">-->
-<!--                    <span class="inline-heading">Stylized Control.</span>-->
-<!--                    <p style="display: inline;">Given a strategy corpus \(\mathcal{S}\), we conduct the indexing stage-->
-<!--                        as specified in Section <a-->
-<!--                                href="#">\ref{sec:graphrag}</a>, but let \(\mathcal{M}^g\) to generate Community-->
-<!--                        Summaries-->
-<!--                        (CS):</p>-->
-<!--                    <div style="text-align: center;">-->
-<!--                        \[-->
-<!--                        CS \leftarrow indexing(\mathcal{S})-->
-<!--                        \]-->
-<!--                    </div>-->
-<!--                    <p>The indexed CS is then deployed into a database which can be queried online.</p>-->
-<!--                    <p>Given a strategy corpus \(\mathcal{S}\), we conduct the indexing stage as specified in Section <a-->
-<!--                            href="#">\ref{sec:graphrag}</a>, but let \(\mathcal{M}^g\) to generate Community Summaries-->
-<!--                        (CS):</p>-->
-<!--                    <div style="text-align: center;">-->
-<!--                        \[-->
-<!--                        CS \leftarrow indexing(\mathcal{S})-->
-<!--                        \]-->
-<!--                    </div>-->
-<!--                    <p>The indexed CS is then deployed into a database which can be queried online.</p>-->
-<!--                    <span class="inline-heading">Online Querying.</span>-->
-<!--                    <p style="display: inline;">Instead of CA, we let \(\mathcal{M}^g\) to summarize the strategy-->
-<!--                        identity (SI), each with a-->
-<!--                        score (0 - 100 scale). Then we conduct a top - k ranking, with a score threshold \(\epsilon\),-->
-<!--                        to produced the optimal community answers (\(SI^o\)): &lt;!&ndash; community instruction (CI) &ndash;&gt;</p>-->
-<!--                    <div style="text-align: center;">-->
-<!--                        \begin{align}-->
-<!--                        & \{ SI, score \} \leftarrow summarize(SI, \{query\}) \\-->
-<!--                        & SI^o = \text{top - k} (\{ SI, score \}, \epsilon)-->
-<!--                        \end{align}-->
-<!--                    </div>-->
-<!--                    <p>We then use \(SI^o\) and a prompt to yield \(\{response\}\):</p>-->
-<!--                    <div style="text-align: center;">-->
-<!--                        \[-->
-<!--                        \{response\} \leftarrow \mathcal{M}(\{query\} \vert SI^o, prompt)-->
-<!--                        \]-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash;Detailed prompt are shown in Appendix \ref{sec:prompts}.&ndash;&gt;-->
-<!--                    <span class="inline-heading">Stylized Control.</span>-->
-<!--                    <p style="display: inline;">We annotate strategies with different categories. Given a specific style-->
-<!--                        category \(cate\), we-->
-<!--                        define an outer control factor called \(c_{cate}\), such that the style of {\ModelName} can be-->
-<!--                        adjusted toward corresponding category:</p>-->
-<!--                    <div style="text-align: center;">-->
-<!--                        \[-->
-<!--                        score(SI_{cate}) \leftarrow c_{cate} * score(SI_{cate})-->
-<!--                        \]-->
-<!--                    </div>-->
-<!--                    <p>The companion {\ModelName}(\(\mathcal{M}, \mathcal{M}^g, \mathcal{S}, c, \{query\}\)) is finally-->
-<!--                        obtained with the control factor \(c\).</p>-->
-
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-
-<!--<section class="section hero">-->
-<!--    <div class="container is-max-desktop">-->
-<!--        <div class="columns is-centered has-text-centered">-->
-<!--            <div class="column is-four-fifths">-->
-<!--                <h2 class="title is-3">3.2 Strategies</h2>-->
-<!--                <div class="content has-text-justified">-->
-
-<!--                    <span class="inline-heading">The strategy format.</span>-->
-<!--                    <p style="display: inline;">The strategy corpus $\mathcal{S}$ is formed by different strategy-->
-<!--                        identities (SI), with a triplet (Condition, Skill, Demonstration) format: </p>-->
-
-<!--                    <span class="inline-heading">Extracting from strategy-annotated datasets.</span>-->
-<!--                    <p style="display: inline;"> Including ESconv \cite{liu2021ESconv} and-->
-<!--                        DailyDailogue \cite{li-etal-2017-dailydialog}, both of which are about emotional support-->
-<!--                        conversations with the seeker's emotion and support strategy annotated.</p>-->
-
-<!--                    <span class="inline-heading">Extracting from style-labeled datasets.</span>-->
-<!--                    <p style="display: inline;">-->
-<!--                        {Extracting from style-labeled datasets.} Including Shakespeare \cite{xu2012paraphrasing} and-->
-<!--                        GYAFC \cite{Rao2018DearSO}, both of which are style pairwise-labeled corpus. The former is-->
-<!--                        `Shakespeare' style versus modern English, while the latter is formal versus formal.-->
-<!--                    </p>-->
-
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-<!-- End paper Method -->
-
-<!-- Paper Experiment -->
-<!--<section class="section hero">-->
-<!--    <div class="container is-max-desktop">-->
-<!--        <div class="columns is-centered has-text-centered">-->
-<!--            <div class="column is-four-fifths">-->
-<!--                <h2 class="title is-3">3.2 Strategies</h2>-->
-<!--                <div class="content has-text-justified">-->
-
-<!--                    <span class="inline-heading">The strategy format.</span>-->
-<!--                    <p style="display: inline;">The strategy corpus $\mathcal{S}$ is formed by different strategy-->
-<!--                        identities (SI), with a triplet (Condition, Skill, Demonstration) format: </p>-->
-
-<!--                    <span class="inline-heading">Extracting from strategy-annotated datasets.</span>-->
-<!--                    <p style="display: inline;"> Including ESconv \cite{liu2021ESconv} and-->
-<!--                        DailyDailogue \cite{li-etal-2017-dailydialog}, both of which are about emotional support-->
-<!--                        conversations with the seeker's emotion and support strategy annotated.</p>-->
-
-<!--                    <span class="inline-heading">Extracting from style-labeled datasets.</span>-->
-<!--                    <p style="display: inline;">-->
-<!--                        {Extracting from style-labeled datasets.} Including Shakespeare \cite{xu2012paraphrasing} and-->
-<!--                        GYAFC \cite{Rao2018DearSO}, both of which are style pairwise-labeled corpus. The former is-->
-<!--                        `Shakespeare' style versus modern English, while the latter is formal versus formal.-->
-<!--                    </p>-->
-
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-<!-- End paper Experiment -->
-
-<!-- Image carousel -->
-
-<!-- End image carousel -->
-
-
+<!--    strategy-->
 <section class="hero is-small">
     <div class="hero-body">
         <div class="container is-max-desktop">
             <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
-                    <h2 class="title is-3">Training Result</h2>
+
+                    <div class="w-full md:w-1/4 text-left md:pl-0 mb-3 md:mb-0">
+                        <h2 class="title text-2xl font-bold">Strategies</h2>
+                    </div>
                     <div class="column">
                         <figure class="image">
-                            <img src="static/images/figure4.png" alt="Image 4">
+                            <img src="static/images/strategy_identities.png" alt="strategy_identities">
                         </figure>
-                        <h2 class="subtitle has-text-centered">
-                            Controlled curves of SCorPion on style categories of ESC (left) and moral (right).
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Extracting from strategy-annotated-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title text-2xl font-bold mb-2 has-text-left">Extracting from strategy-annotated
+                        datasets</h2>
+                    <ul class="list-disc pl-5">
+                        <li>
+                            <h2 class="title text-base  mb-1 has-text-left">ESconv</h2>
+                            <p class="content text-justify text-m">
+                                Question, Restatement or Paraphrasing, Reflection of feelings, Self-disclosure,
+                                Affirmation and Reassurance, Providing Suggestions, Information.
+                            </p>
+                        </li>
+                        <li>
+                            <h2 class="title text-base  mb-1 has-text-left">DailyDialogue</h2>
+                            <p class="content text-justify text-m">
+                                Directive, Inform, Question, Commissive.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Extracting from principle-annotated datasets-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title text-2xl font-bold mb-2 has-text-left">Extracting from principle-annotated
+                        datasets</h2>
+                    <ul class="list-disc pl-5">
+                        <li>
+                            <h2 class="title text-base  mb-1 has-text-left">MIC (morality types)</h2>
+                            <p class="content text-justify text-m">
+                                loyalty, care, fairness, authority, sanctity, liberty.
+                            </p>
+                        </li>
+                        <li>
+                            <h2 class="title text-base  mb-1 has-text-left">Cskills (scenarios)</h2>
+                            <p class="content text-justify text-m">
+                                Topic transition, Empathy, Proactively asking questions, Concept guidance, Summarising
+                                often.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Extracting from style-labeled datasets-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title text-2xl font-bold mb-2 has-text-left">Extracting from style-labeled datasets</h2>
+                    <ul class="list-disc pl-5">
+                        <li>
+                            <h2 class="title text-base  mb-1 has-text-left">Shakespeare</h2>
+                            <p class="content text-justify text-m">
+                                modern, mid-age
+                            </p>
+                        </li>
+                        <li>
+                            <h2 class="title text-base  mb-1 has-text-left">GYAFC</h2>
+                            <p class="content text-justify text-m">
+                                formal, informal
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--    Results-->
+<section class="section hero  py-16">
+    <div class="container mx-auto max-w-screen-xl">
+        <div class="flex justify-center">
+            <div class="text-center w-4/5">
+                <h2 class="title text-3xl font-bold mb-3">Results</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Open-domain-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+
+                    <div class="w-full md:w-1/4 text-left md:pl-0 mb-3 md:mb-0">
+                        <h2 class="title text-2xl font-bold text-left">Open-domain</h2>
+                    </div>
+                    <p class="content text-justify text-m">
+                        SCorPion can provide strong personality and higher communication skills in open-domain
+                        conversation.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--table1-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="column">
+                        <figure class="image">
+                            <img src="static/images/table1.png" alt="table1">
+                        </figure>
+                        <h2 class="subtitle text-sm has-text-centered">
+                            Results on the Cskills Benchmark. Experiments are run on GPT 3.5.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--table2-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="column">
+                        <figure class="image">
+                            <img src="static/images/table2.png" alt="Image 5">
+                        </figure>
+                        <h2 class="subtitle text-sm has-text-centered">
+                            Open cases generated by SCorPion.
                         </h2>
                     </div>
                 </div>
@@ -573,14 +492,32 @@
     </div>
 </section>
 
-<!--2 colum static images -->
-
+<!--Empathetic Chating-->
 <section class="hero is-small">
     <div class="hero-body">
         <div class="container is-max-desktop">
             <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
-                    <h2 class="title is-3">Benchmark</h2>
+
+                    <div class="w-full md:w-1/4 text-left md:pl-0 mb-3 md:mb-0">
+                        <h2 class="title text-2xl font-bold text-left">Empathetic Chating</h2>
+                    </div>
+                    <p class="content text-justify text-m">
+                        SCorPion can behave as a good emotional supporter.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--figure3-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
                     <div class="columns">
                         <div class="column">
                             <figure class="image">
@@ -593,472 +530,373 @@
                             </figure>
                         </div>
                     </div>
-                    <h2 class="subtitle has-text-centered">
+                    <h2 class="subtitle text-sm has-text-centered">
                         Emotional shifts by SCorPion on emotional intensity (left) and emotional contagion (right).
                     </h2>
                 </div>
             </div>
         </div>
     </div>
+</section>
 
-    <!--    <section class="hero is-small">-->
-    <!--        <div class="hero-body">-->
-    <!--            <div class="container is-max-desktop">-->
-    <!--                <div class="columns is-centered has-text-centered">-->
-    <!--                    <div class="column is-full">-->
-    <!--                        <div class="table-container" style="margin: 2rem auto; max-width: 1200px;">-->
-    <!--                            <style>-->
-    <!--                                @keyframes fadeInUp {-->
-    <!--                                    from {-->
-    <!--                                        opacity: 0;-->
-    <!--                                        transform: translateY(8px);-->
-    <!--                                    }-->
-    <!--                                    to {-->
-    <!--                                        opacity: 1;-->
-    <!--                                        transform: translateY(0);-->
-    <!--                                    }-->
-    <!--                                }-->
-
-    <!--                                .dynamic-table {-->
-    <!--                                    width: 100%;-->
-    <!--                                    border-collapse: collapse;-->
-    <!--                                    min-width: 800px;-->
-    <!--                                    font-family: 'Inter', system-ui, sans-serif;-->
-    <!--                                    background: white;-->
-    <!--                                    border-radius: 0px;-->
-    <!--                                    overflow: hidden;-->
-    <!--                                    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.08);-->
-    <!--                                }-->
-
-    <!--                                .dynamic-table th {-->
-    <!--                                    background: #8c8eef;-->
-    <!--                                    color: white;-->
-    <!--                                    padding: 0.8rem 1rem;-->
-    <!--                                    font-weight: 600;-->
-    <!--                                    text-align: center;-->
-    <!--                                    transition: background 0.3s ease;-->
-    <!--                                }-->
-
-    <!--                                .dynamic-table td {-->
-    <!--                                    padding: 0.8rem 1rem;-->
-    <!--                                    text-align: center;-->
-    <!--                                    border-bottom: 1px solid #e5e7eb;-->
-    <!--                                    white-space: nowrap;-->
-    <!--                                    transition: all 0.2s ease;-->
-    <!--                                }-->
-
-    <!--                                .method-cell {-->
-    <!--                                    background: #f8fafc;-->
-    <!--                                    position: sticky;-->
-    <!--                                    left: 0;-->
-    <!--                                    z-index: 2;-->
-    <!--                                    font-weight: 500;-->
-    <!--                                    color: #1f2937;-->
-    <!--                                    min-width: 180px;-->
-    <!--                                    padding-left: 1.5rem;-->
-    <!--                                    border-right: 1px solid #e5e7eb;-->
-    <!--                                    transition: transform 0.3s ease;-->
-    <!--                                }-->
-
-    <!--                                .best-value {-->
-    <!--                                    color: #6366f1;-->
-    <!--                                    font-weight: 600;-->
-    <!--                                    position: relative;-->
-    <!--                                }-->
-
-    <!--                                .best-value::after {-->
-    <!--                                    content: "🏆";-->
-    <!--                                    margin-left: 0.3rem;-->
-    <!--                                    font-size: 0.8em;-->
-    <!--                                    vertical-align: middle;-->
-    <!--                                    transition: transform 0.3s ease;-->
-    <!--                                }-->
-
-    <!--                                /* 悬停动效 */-->
-    <!--                                .dynamic-table tr:hover td {-->
-    <!--                                    background: #f1f5f9;-->
-    <!--                                    transform: translateX(4px);-->
-    <!--                                }-->
-
-    <!--                                .dynamic-table tr:hover .method-cell {-->
-    <!--                                    transform: translateX(4px);-->
-    <!--                                }-->
-
-    <!--                                .dynamic-table td:hover {-->
-    <!--                                    transform: scale(1.05);-->
-    <!--                                    z-index: 3;-->
-    <!--                                }-->
-
-    <!--                                /* 加载动画 */-->
-    <!--                                .dynamic-table tbody tr {-->
-    <!--                                    animation: fadeInUp 0.6s ease forwards;-->
-    <!--                                    opacity: 0;-->
-    <!--                                }-->
-
-    <!--                                .dynamic-table tbody tr:nth-child(1) {-->
-    <!--                                    animation-delay: 0.1s;-->
-    <!--                                }-->
-
-    <!--                                .dynamic-table tbody tr:nth-child(2) {-->
-    <!--                                    animation-delay: 0.2s;-->
-    <!--                                }-->
-
-    <!--                                .dynamic-table tbody tr:nth-child(3) {-->
-    <!--                                    animation-delay: 0.3s;-->
-    <!--                                }-->
-
-    <!--                                .dynamic-table tbody tr:nth-child(4) {-->
-    <!--                                    animation-delay: 0.4s;-->
-    <!--                                }-->
-
-    <!--                                .dynamic-table tbody tr:nth-child(5) {-->
-    <!--                                    animation-delay: 0.5s;-->
-    <!--                                }-->
-
-    <!--                                /* 奖杯悬停动效 */-->
-    <!--                                .best-value:hover::after {-->
-    <!--                                    transform: scale(1.2) rotate(15deg);-->
-    <!--                                }-->
-    <!--                            </style>-->
-
-    <!--                            <table class="dynamic-table">-->
-    <!--                                <thead>-->
-    <!--                                <tr>-->
-    <!--                                    <th class="method-cell">Method</th>-->
-    <!--                                    <th colspan="2">ESconv</th>-->
-    <!--                                    <th colspan="2">DailyDialogue</th>-->
-    <!--                                    <th colspan="2">EmpatheticDialogues</th>-->
-    <!--                                    <th colspan="2">MIC</th>-->
-    <!--                                    <th colspan="2">GYAFC</th>-->
-    <!--                                    <th colspan="2">Shakespeare</th>-->
-    <!--                                </tr>-->
-    <!--                                <tr>-->
-    <!--                                    <th class="method-cell"></th>-->
-    <!--                                    <th>B-2</th>-->
-    <!--                                    <th>R-L</th>-->
-    <!--                                    <th>B-2</th>-->
-    <!--                                    <th>R-L</th>-->
-    <!--                                    <th>B-2</th>-->
-    <!--                                    <th>R-L</th>-->
-    <!--                                    <th>B-2</th>-->
-    <!--                                    <th>R-L</th>-->
-    <!--                                    <th>B-2</th>-->
-    <!--                                    <th>R-L</th>-->
-    <!--                                    <th>B-2</th>-->
-    <!--                                    <th>R-L</th>-->
-    <!--                                </tr>-->
-    <!--                                </thead>-->
-    <!--                                <tbody>-->
-    <!--                                <tr>-->
-    <!--                                    <td class="method-cell">LLaMA3-70B-Instruct</td>-->
-    <!--                                    <td>3.06</td>-->
-    <!--                                    <td>10.16</td>-->
-    <!--                                    <td class="best-value">3.50</td>-->
-    <!--                                    <td class="best-value">11.20</td>-->
-    <!--                                    <td>2.60</td>-->
-    <!--                                    <td>8.90</td>-->
-    <!--                                    <td>3.90</td>-->
-    <!--                                    <td>11.06</td>-->
-    <!--                                    <td>13.00</td>-->
-    <!--                                    <td>32.44</td>-->
-    <!--                                    <td>12.45</td>-->
-    <!--                                    <td>31.44</td>-->
-    <!--                                </tr>-->
-    <!--                                <tr>-->
-    <!--                                    <td class="method-cell">+ Self-Refine</td>-->
-    <!--                                    <td>2.97</td>-->
-    <!--                                    <td>10.12</td>-->
-    <!--                                    <td>3.40</td>-->
-    <!--                                    <td>10.83</td>-->
-    <!--                                    <td>2.81</td>-->
-    <!--                                    <td>9.74</td>-->
-    <!--                                    <td>-</td>-->
-    <!--                                    <td>-</td>-->
-    <!--                                    <td>-</td>-->
-    <!--                                    <td>-</td>-->
-    <!--                                    <td>-</td>-->
-    <!--                                    <td>-</td>-->
-    <!--                                </tr>-->
-    <!--                                <tr>-->
-    <!--                                    <td class="method-cell">+ CoT</td>-->
-    <!--                                    <td>1.85</td>-->
-    <!--                                    <td>9.67</td>-->
-    <!--                                    <td>2.09</td>-->
-    <!--                                    <td>7.62</td>-->
-    <!--                                    <td>2.60</td>-->
-    <!--                                    <td>9.06</td>-->
-    <!--                                    <td>-</td>-->
-    <!--                                    <td>-</td>-->
-    <!--                                    <td>-</td>-->
-    <!--                                    <td>-</td>-->
-    <!--                                    <td>-</td>-->
-    <!--                                    <td>-</td>-->
-    <!--                                </tr>-->
-    <!--                                <tr>-->
-    <!--                                    <td class="method-cell">+ BOT</td>-->
-    <!--                                    <td>3.44</td>-->
-    <!--                                    <td>10.95</td>-->
-    <!--                                    <td>2.78</td>-->
-    <!--                                    <td>9.67</td>-->
-    <!--                                    <td>2.10</td>-->
-    <!--                                    <td>8.18</td>-->
-    <!--                                    <td>-</td>-->
-    <!--                                    <td>-</td>-->
-    <!--                                    <td>-</td>-->
-    <!--                                    <td>-</td>-->
-    <!--                                    <td>-</td>-->
-    <!--                                    <td>-</td>-->
-    <!--                                </tr>-->
-    <!--                                <tr>-->
-    <!--                                    <td class="method-cell" style="color: #6366f1; font-weight: 600;">+ SCorPion-->
-    <!--                                        (ours)-->
-    <!--                                    </td>-->
-    <!--                                    <td class="best-value">4.32</td>-->
-    <!--                                    <td class="best-value">13.00</td>-->
-    <!--                                    <td>3.29</td>-->
-    <!--                                    <td class="best-value">12.01</td>-->
-    <!--                                    <td class="best-value">3.74</td>-->
-    <!--                                    <td class="best-value">13.06</td>-->
-    <!--                                    <td class="best-value">6.22</td>-->
-    <!--                                    <td class="best-value">15.13</td>-->
-    <!--                                    <td class="best-value">15.24</td>-->
-    <!--                                    <td class="best-value">36.14</td>-->
-    <!--                                    <td class="best-value">15.06</td>-->
-    <!--                                    <td class="best-value">37.43</td>-->
-    <!--                                </tr>-->
-    <!--                                </tbody>-->
-    <!--                            </table>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-
-    <!--        Sensitivity curves of B-2 (bar) and RT (line) on ESconv, with different $k$, $\epsilon$, sizes of $\mathcal{M}$ and  $\mathcal{M}^g$.-->
-
-    <section class="hero is-small">
-        <div class="hero-body">
-            <div class="container is-max-desktop">
-                <div class="columns is-centered has-text-centered">
-                    <div class="column is-four-fifths">
-                        <h2 class="title is-3">Training Result</h2>
-                        <div class="column">
-                            <figure class="image">
-                                <img src="static/images/figure5.png" alt="Image 5">
-                            </figure>
-                            <h2 class="subtitle has-text-centered">
-                                Sensitivity curves of B-2 (bar) and RT (line) on ESconv, with different \(k\),
-                                \(\epsilon\), sizes of \(\mathcal{M}\) and \(\mathcal{M}^g\)
-                            </h2>
-                        </div>
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="column">
+                        <figure class="image">
+                            <img src="static/images/table4.png" alt="table4">
+                        </figure>
+                        <h2 class="subtitle text-sm has-text-centered">
+                            Averaged Human evaluation of response quality on ESconv, DailyDialogue and
+                            EmpatheticDialogues.
+                        </h2>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="hero is-small">
-        <div class="hero-body">
-            <div class="container is-max-desktop">
-                <div class="columns is-centered has-text-centered">
-                    <div class="column is-four-fifths">
-                        <div class="column">
-                            <figure class="image">
-                                <img src="static/images/table1.png" alt="Image 5">
-                            </figure>
-                            <h2 class="subtitle has-text-centered">
-                                Results on the Cskills Benchmark. Experiments are run on GPT 3.5.
-                            </h2>
-                        </div>
+<!--table3 table4 table8-->
+
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="column">
+                        <figure class="image">
+                            <img src="static/images/table3-1.PNG" alt="table3-1">
+                        </figure>
+                        <h2 class="subtitle text-sm has-text-centered">
+                            Results of BLEU-2 (B-2) and ROUGE-L (R-L) on ESC tasks.
+                        </h2>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="hero is-small">
-        <div class="hero-body">
-            <div class="container is-max-desktop">
-                <div class="columns is-centered has-text-centered">
-                    <div class="column is-four-fifths">
-                        <div class="column">
-                            <figure class="image">
-                                <img src="static/images/table2.png" alt="Image 5">
-                            </figure>
-                            <h2 class="subtitle has-text-centered">
-                                Open cases generated by SCorPion.
-                            </h2>
-                        </div>
+    </div>
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="column">
+                        <figure class="image">
+                            <img src="static/images/table4.png" alt="table4">
+                        </figure>
+                        <h2 class="subtitle text-sm has-text-centered">
+                            Averaged Human evaluation of response quality on ESconv, DailyDialogue and
+                            EmpatheticDialogues.
+                        </h2>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="hero is-small">
-        <div class="hero-body">
-            <div class="container is-max-desktop">
-                <div class="columns is-centered has-text-centered">
-                    <div class="column is-four-fifths">
-                        <div class="column">
-                            <figure class="image">
-                                <img src="static/images/table3.png" alt="table3">
-                            </figure>
-                            <h2 class="subtitle has-text-centered">
-                                Results of BLEU-2 (B-2) and ROUGE-L (R-L) on ESC and style adaptation tasks.
-                            </h2>
-                        </div>
+    </div>
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="column">
+                        <figure class="image">
+                            <img src="static/images/table8.png" alt="table8">
+                        </figure>
+                        <h2 class="subtitle text-sm has-text-centered">
+                            Typical cases generated by SCorPion in ESC. Contents of the original dataset are
+                            bolded.
+                        </h2>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="hero is-small">
-        <div class="hero-body">
-            <div class="container is-max-desktop">
-                <div class="columns is-centered has-text-centered">
-                    <div class="column is-four-fifths">
-                        <div class="column">
-                            <figure class="image">
-                                <img src="static/images/table4.png" alt="table4">
-                            </figure>
-                            <h2 class="subtitle has-text-centered">
-                                Averaged Human evaluation of response quality on ESconv, DailyDialogue and
-                                EmpatheticDialogues.
-                            </h2>
-                        </div>
+
+<!--Style Adaptation-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+
+                    <div class="w-full md:w-1/4 text-left md:pl-0 mb-3 md:mb-0">
+                        <h2 class="title text-2xl font-bold text-left">Style Adaptation</h2>
+                    </div>
+                    <p class="content text-justify text-m">
+                        SCorPion can be adapted to some specific styles.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--table3-2 table9-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="column">
+                        <figure class="image">
+                            <img src="static/images/table3-2.png" alt="table3-2">
+                        </figure>
+                        <h2 class="subtitle text-sm has-text-centered">
+                            Results of BLEU-2 (B-2) and ROUGE-L (R-L) on style adaptation tasks.
+                        </h2>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="hero is-small">
-        <div class="hero-body">
-            <div class="container is-max-desktop">
-                <div class="columns is-centered has-text-centered">
-                    <div class="column is-four-fifths">
-                        <div class="column">
-                            <figure class="image">
-                                <img src="static/images/table5.png" alt="table 5">
-                            </figure>
-                            <h2 class="subtitle has-text-centered">
-                                Emotional Intelligence Performances of Methods. Sentiment of SECEU measures the
-                                deviation from human result, therefore smaller Sentiment means better result. The
-                                `Human' row indicates results of human responses (in blue); For BotChat, result is
-                                calculated from anonymously annotations; for ESC-Eval, 3 corresponds to full score.
-                            </h2>
-                        </div>
+    </div>
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="column">
+                        <figure class="image">
+                            <img src="static/images/table9.png" alt="table9">
+                        </figure>
+                        <h2 class="subtitle text-sm has-text-centered">
+                            Cases of SCorPion on style adaptation tasks.
+                        </h2>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="hero is-small">
-        <div class="hero-body">
-            <div class="container is-max-desktop">
-                <div class="columns is-centered has-text-centered">
-                    <div class="column is-four-fifths">
-                        <div class="column">
-                            <figure class="image">
-                                <img src="static/images/table6.png" alt="table 6">
-                            </figure>
-                            <h2 class="subtitle has-text-centered">
-                                Ablation study on ESconv. CA means community answers, in contrast with SI used in
-                                SCorPion.
-                            </h2>
-                        </div>
+
+<!--Personification-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+
+                    <div class="w-full md:w-1/4 text-left md:pl-0 mb-3 md:mb-0">
+                        <h2 class="title text-2xl font-bold text-left">Personification</h2>
+                    </div>
+                    <p class="content text-justify text-m">
+                        SCorPion possess high emotional intelligence.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--table5-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="column">
+                        <figure class="image">
+                            <img src="static/images/table5.png" alt="table5">
+                        </figure>
+                        <h2 class="subtitle text-sm has-text-centered">
+                            Emotional Intelligence Performances of Methods. Sentiment of SECEU measures
+                            the
+                            deviation from human result, therefore smaller Sentiment means better
+                            result. The
+                            `Human' row indicates results of human responses (in blue); For BotChat,
+                            result is
+                            calculated from anonymously annotations; for ESC-Eval, 3 corresponds to full
+                            score.
+                        </h2>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</section>
 
-    </section>
+<!--Controllability-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
 
-    <!--&lt;!&ndash; Youtube video &ndash;&gt;-->
-    <!--<section class="hero is-small is-light">-->
-    <!--    <div class="hero-body">-->
-    <!--        <div class="container">-->
-    <!--            &lt;!&ndash; Paper video. &ndash;&gt;-->
-    <!--            <h2 class="title is-3">Video Presentation</h2>-->
-    <!--            <div class="columns is-centered has-text-centered">-->
-    <!--                <div class="column is-four-fifths">-->
+                    <div class="w-full md:w-1/4 text-left md:pl-0 mb-3 md:mb-0">
+                        <h2 class="title text-2xl font-bold text-left">Controllability</h2>
+                    </div>
+                    <p class="content text-justify text-m">
+                        SCorPion has remarkable controllability (We can steer SCorPion to a specific style
+                        given an arbitrary control factor).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--figure4  table10-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="column">
+                        <figure class="image">
+                            <img src="static/images/figure4.png" alt="figure4">
+                        </figure>
+                        <h2 class="subtitle text-sm has-text-centered">
+                            Controlled curves of SCorPion on style categories of ESC (left) and moral
+                            (right)
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="column">
+                        <figure class="image">
+                            <img src="static/images/table10.png" alt="table10">
+                        </figure>
+                        <h2 class="subtitle text-sm has-text-centered">
+                            Cases of SCorPion on style control tasks.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!--                    <div class="publication-video">-->
-    <!--                        &lt;!&ndash; Youtube embed code here &ndash;&gt;-->
-    <!--                        <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0"-->
-    <!--                                allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</section>-->
-    <!--&lt;!&ndash; End youtube video &ndash;&gt;-->
+<!--Ablation Studies-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
 
+                    <div class="w-full md:w-1/4 text-left md:pl-0 mb-3 md:mb-0">
+                        <h2 class="title text-2xl font-bold text-left">Ablation Studies</h2>
+<!--                        <h2 class="title text-xl font-bold mb-1 has-text-left">Ablation on strategy identity: w/o condition, w/o example</h2>-->
+<!--                        <h2 class="title text-xl font-bold mb-1 has-text-left">Ablation on GraphRAG logic: w/o summarization in GraphRAG, w/ CA in GraphRAG, reversed order in ranking</h2>-->
 
-    <!--&lt;!&ndash; Video carousel &ndash;&gt;-->
-    <!--<section class="hero is-small">-->
-    <!--    <div class="hero-body">-->
-    <!--        <div class="container">-->
-    <!--            <h2 class="title is-3">Another Carousel</h2>-->
-    <!--            <div id="results-carousel" class="carousel results-carousel">-->
-    <!--                <div class="item item-video1">-->
-    <!--                    <video poster="" id="video1" autoplay controls muted loop height="100%">-->
-    <!--                        &lt;!&ndash; Your video file here &ndash;&gt;-->
-    <!--                        <source src="static/videos/carousel1.mp4"-->
-    <!--                                type="video/mp4">-->
-    <!--                    </video>-->
-    <!--                </div>-->
-    <!--                <div class="item item-video2">-->
-    <!--                    <video poster="" id="video2" autoplay controls muted loop height="100%">-->
-    <!--                        &lt;!&ndash; Your video file here &ndash;&gt;-->
-    <!--                        <source src="static/videos/carousel2.mp4"-->
-    <!--                                type="video/mp4">-->
-    <!--                    </video>-->
-    <!--                </div>-->
-    <!--                <div class="item item-video3">-->
-    <!--                    <video poster="" id="video3" autoplay controls muted loop height="100%">\-->
-    <!--                        &lt;!&ndash; Your video file here &ndash;&gt;-->
-    <!--                        <source src="static/videos/carousel3.mp4"-->
-    <!--                                type="video/mp4">-->
-    <!--                    </video>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</section>-->
-    <!--&lt;!&ndash; End video carousel &ndash;&gt;-->
+                        <ul class="list-disc pl-5">
+                        <li>
+                            <h2 class="title text-base  mb-1 has-text-left">Ablation on strategy identity: w/o condition, w/o example</h2>
+<!--                            <p class="content text-justify text-m">-->
+<!--                                Question, Restatement or Paraphrasing, Reflection of feelings, Self-disclosure,-->
+<!--                                Affirmation and Reassurance, Providing Suggestions, Information.-->
+<!--                            </p>-->
+                        </li>
+                        <li>
+                            <h2 class="title text-base  mb-1 has-text-left">Ablation on GraphRAG logic: w/o summarization in GraphRAG, w/ CA in GraphRAG, reversed order in ranking</h2>
+<!--                            <p class="content text-justify text-m">-->
+<!--                                Directive, Inform, Question, Commissive.-->
+<!--                            </p>-->
+                        </li>
+                    </ul>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--            table6-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="column">
+                        <figure class="image">
+                            <img src="static/images/table6.png" alt="table6">
+                        </figure>
+                        <h2 class="subtitle text-sm has-text-centered">
+                            Ablation study on ESconv. CA means community answers, in contrast with SI used
+                            in SCorPion.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!--&lt;!&ndash; Paper poster &ndash;&gt;-->
-    <!--<section class="hero is-small is-light">-->
-    <!--    <div class="hero-body">-->
-    <!--        <div class="container">-->
-    <!--            <h2 class="title">Poster</h2>-->
+<!--Sensitivity Analysis-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
 
-    <!--            <iframe src="static/pdfs/sample.pdf" width="100%" height="550">-->
-    <!--            </iframe>-->
+                    <div class="w-full md:w-1/4 text-left md:pl-0 mb-3 md:mb-0">
+                        <h2 class="title text-2xl font-bold text-left">Sensitivity Analysis</h2>
+                    </div>
+                    <p class="content text-justify text-m">
+                        We choose the hyperparameters of the deployed versio of SCorPion based on the
+                        sensitivy results.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</section>-->
-    <!--&lt;!&ndash;End paper poster &ndash;&gt;-->
+<!-- figure5-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="column">
+                        <figure class="image">
+                            <img src="static/images/figure5.png" alt="figure5">
+                        </figure>
+                        <h2 class="subtitle text-sm has-text-centered">
+                            Sensitivity curves of B-2 (bar) and RT (line) on ESconv, with different
+                            \(k\),\(\epsilon\), sizes of \(\mathcal{M}\) and \(\mathcal{M}^g\)
+                        </h2>
+                    </div>
+                    <p class="content text-justify text-m">From the trade-off between algorithm performance
+                        and computational complexity, our formal deployed version use k = 10 and ϵ = 80; the
+                        conversation model keeps 70B and the GraphRAG model is reduced to 8B.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!--            conclusion-->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
 
-    <!--&lt;!&ndash;BibTex citation &ndash;&gt;-->
-    <!--<section class="section" id="BibTeX">-->
-    <!--    <div class="container is-max-desktop content">-->
-    <!--        <h2 class="title">BibTeX</h2>-->
-    <!--        <pre><code>BibTex Code Here</code></pre>-->
-    <!--    </div>-->
-    <!--</section>-->
-    <!--&lt;!&ndash;End BibTex citation &ndash;&gt;-->
+                    <div class="w-full md:w-1/4 has-text-centered md:pl-0 mb-3 md:mb-0">
+                        <h2 class="title text-2xl font-bold">Conclusion</h2>
+                    </div>
+                    <p class="content text-justify text-m">In this paper, we propose a GraphRAG based
+                        conversational companion called SCorPion which has strong personality, styled
+                        response and can be controlled by explicit control factors. Its capabilities have
+                        been verified on experiments of open-domain dialogue, emotional support
+                        conversation, stylized generation and other tasks. We finally deploy it on an
+                        industrial chatting application with key parameters determined from thorough
+                        sensitivity analysis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-
-    <footer class="footer">
+<footer class="footer">
         <div class="container">
             <div class="columns is-centered">
                 <div class="column is-8">
@@ -1086,12 +924,4 @@
         </div>
     </footer>
 
-    <!-- Statcounter tracking code -->
-
-    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-
 </body>
-</html>
